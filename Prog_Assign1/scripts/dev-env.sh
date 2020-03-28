@@ -20,8 +20,7 @@ declare -a primary_binary=( "ubuntu-desktop" "bash-completion" "apt-transport-ht
 declare -a secondary_binary=( "python3-pip" "git")
 
 apt-get update
-aptInstall "${prim
-declare -a secondary_binary=( "python3-pip" "git" "docker-ce" "docker-ce-cli" "containerd.io")
+aptInstall "${primary_binary[@]}"
 
 aptInstall "${secondary_binary[@]}"
 
